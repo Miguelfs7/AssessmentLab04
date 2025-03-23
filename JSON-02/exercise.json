@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-04/schema#",
+    "type": "object",
+    "properties": {
+        "Product": {
+            "type": "object",
+            "properties": {
+                "ProductID": { "type": "string" },
+                "ProductName": { "type": "string" },
+                "Price": { "type": "string", "pattern": "^\\d+(\\.\\d{1,2})?$" },
+                "Provider": {
+                    "type": "object",
+                    "properties": {
+                        "Name": { "type": "string" },
+                        "City": { "type": "string" }
+                    },
+                    "required": ["Name", "City"]
+                }
+            },
+            "required": ["ProductID", "ProductName", "Price", "Provider"]
+        }
+    },
+    "required": ["Product"]
+}

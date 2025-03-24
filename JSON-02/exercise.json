@@ -5,9 +5,9 @@
         "Product": {
             "type": "object",
             "properties": {
-                "ProductID": { "type": "string" },
+                "ProductID": { "type": "string", "pattern": "^[0-9]+$" },
                 "ProductName": { "type": "string" },
-                "Price": { "type": "string", "pattern": "^\\d+(\\.\\d{1,2})?$" },
+                "Price": { "type": "string", "pattern": "^[0-9]+(\\.[0-9])*$" },
                 "Provider": {
                     "type": "object",
                     "properties": {

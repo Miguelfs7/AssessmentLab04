@@ -1,0 +1,8 @@
+[
+  {
+    "cod": "MAT01",
+    "disciplina": "Matemática",
+    "professor": "Ana Costa",
+    "nota": 18
+  }
+]
